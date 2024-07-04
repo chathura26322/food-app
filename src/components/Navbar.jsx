@@ -6,12 +6,12 @@ const Navbar = () => {
   const [selectedMenu, setSelectedMenu] = useState("home");
   return (
     <div className="flex w-[90%] justify-between m-auto items-center py-2 px-0 bg-cover max-h-[100px] ">
-      <div className="w-[80px] h-[80px] ">
-        <img src={assets.logo1} alt="" />
+      <div className="w-[120px] h-[120px] ">
+        <img src={assets.logo} alt="" />
       </div>
       <div className="flex gap-5 justify-start  ">
         <p
-          className={`cursor-pointer  ${
+          className={`transition duration-500 hover:scale-105 cursor-pointer  ${
             selectedMenu === "home" ? "border-b-4 border-[#A70604]" : ""
           }`}
           onClick={() => setSelectedMenu("home")}
@@ -19,7 +19,7 @@ const Navbar = () => {
           HOME
         </p>
         <p
-          className={`cursor-pointer ${
+          className={`transition duration-500 hover:scale-105 cursor-pointer ${
             selectedMenu === "menu" ? "border-b-4 border-[#A70604]" : ""
           }`}
           onClick={() => setSelectedMenu("menu")}
@@ -28,7 +28,7 @@ const Navbar = () => {
           MENU
         </p>
         <p
-          className={`cursor-pointer ${
+          className={`transition duration-500 hover:scale-105 cursor-pointer ${
             selectedMenu == "mobile app" ? "border-b-4 border-[#A70604]" : ""
           }`}
           onClick={() => setSelectedMenu("mobile app")}
@@ -36,7 +36,7 @@ const Navbar = () => {
           MOBILE-APP
         </p>
         <p
-          className={`cursor-pointer ${
+          className={`transition duration-500 hover:scale-105 cursor-pointer ${
             selectedMenu == "conatct-us" ? "border-b-4 border-[#A70604]" : ""
           }`}
           onClick={() => setSelectedMenu("conatct-us")}
@@ -45,7 +45,7 @@ const Navbar = () => {
         </p>
       </div>
       <div className="flex rounded-[20px] border-[2.5px] w-[200px] border-[#A70604] gap-2 h-[30px] my-2  ">
-        <div className="bg-[#A70604] flex items-center justify-center w-[110px] rounded-l-[20px] ">
+        <div className="bg-[#A70604] flex items-center justify-center w-[110px]  rounded-l-[20px] ">
           <p className=" text-white">Sign Up</p>
         </div>
         <div className="bg-white flex items-center justify-center w-[90px] rounded-r-[20px]">

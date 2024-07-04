@@ -7,6 +7,11 @@ import hero4 from "./hero4.png";
 import app_store from "./app_store.png";
 import play_store from "./play_store.png";
 
+import facebook from "./facebook.png";
+import instagram from "./instagram.jpeg";
+import tiktok from "./tiktok.png";
+import youtube from "./youtube.png";
+
 import M_Biriyani from "./M_Biriyani.jpeg";
 import M_Burger from "./M_Burger.jpeg";
 import M_Chicken from "./M_Chicken.jpeg";
@@ -30,4 +35,11 @@ export const MS_Images = {
   M_Chicken,
   Chicken_Bucket,
   Delivery,
+};
+
+export const socialMedia = {
+  facebook,
+  instagram,
+  tiktok,
+  youtube,
 };
