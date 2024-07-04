@@ -1,7 +1,7 @@
 import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import MiddleSection from "./components/MiddleSection";
 import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import { Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
@@ -9,11 +9,9 @@ const App = () => {
       <div className="w-[90%] m-auto">
         <Navbar />
       </div>
-      <Hero />
-      <div className="w-[90%] m-auto">
-        <MiddleSection />
-      </div>
-
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
       <Footer />
     </>
   );

@@ -30,7 +30,7 @@ const MiddleSection = () => {
               A Taste You Can Trust!
             </p>
             <div className="py-[30px]">
-              <button className="text-xl w-[200px] hover:bg-[#a0302e] rounded-[10px]  text-white bg-[#A70604] h-[50px]">
+              <button className="text-xl w-[200px] hover:bg-black rounded-[10px]  text-white bg-[#A70604] h-[50px]">
                 Order Now
               </button>
             </div>

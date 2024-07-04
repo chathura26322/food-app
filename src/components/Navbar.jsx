@@ -1,17 +1,48 @@
+import { useState } from "react";
 import { assets } from "../assets/assets";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 const Navbar = () => {
+  const [selectedMenu, setSelectedMenu] = useState("home");
   return (
-    <div className="flex w-[90%] justify-between m-auto items-center py-2 px-0 bg-cover max-h-[80px] ">
-      <div className="w-[150px] ">
-        <img src={assets.logo} alt="" />
+    <div className="flex w-[90%] justify-between m-auto items-center py-2 px-0 bg-cover max-h-[100px] ">
+      <div className="w-[80px] h-[80px] ">
+        <img src={assets.logo1} alt="" />
       </div>
-      <div className="flex gap-4 justify-start  ">
-        <p className="hidden md:block">HOME</p>
-        <p className="hidden md:block"> MENU</p>
-        <p className="hidden md:block">MOBILE-APP</p>
-        <p className="hidden md:block">CONATCT-US</p>
+      <div className="flex gap-5 justify-start  ">
+        <p
+          className={`cursor-pointer  ${
+            selectedMenu === "home" ? "border-b-4 border-[#A70604]" : ""
+          }`}
+          onClick={() => setSelectedMenu("home")}
+        >
+          HOME
+        </p>
+        <p
+          className={`cursor-pointer ${
+            selectedMenu === "menu" ? "border-b-4 border-[#A70604]" : ""
+          }`}
+          onClick={() => setSelectedMenu("menu")}
+        >
+          {" "}
+          MENU
+        </p>
+        <p
+          className={`cursor-pointer ${
+            selectedMenu == "mobile app" ? "border-b-4 border-[#A70604]" : ""
+          }`}
+          onClick={() => setSelectedMenu("mobile app")}
+        >
+          MOBILE-APP
+        </p>
+        <p
+          className={`cursor-pointer ${
+            selectedMenu == "conatct-us" ? "border-b-4 border-[#A70604]" : ""
+          }`}
+          onClick={() => setSelectedMenu("conatct-us")}
+        >
+          CONATCT-US
+        </p>
       </div>
       <div className="flex rounded-[20px] border-[2.5px] w-[200px] border-[#A70604] gap-2 h-[30px] my-2  ">
         <div className="bg-[#A70604] flex items-center justify-center w-[110px] rounded-l-[20px] ">

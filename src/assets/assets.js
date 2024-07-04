@@ -1,8 +1,11 @@
 import logo from "./logo.png";
+import logo1 from "./logo2.png";
 import hero1 from "./hero1.png";
 import hero2 from "./hero2.png";
 import hero3 from "./hero3.png";
 import hero4 from "./hero4.png";
+import app_store from "./app_store.png";
+import play_store from "./play_store.png";
 
 import M_Biriyani from "./M_Biriyani.jpeg";
 import M_Burger from "./M_Burger.jpeg";
@@ -16,6 +19,9 @@ export const assets = {
   hero2,
   hero3,
   hero4,
+  logo1,
+  app_store,
+  play_store,
 };
 
 export const MS_Images = {
