@@ -8,7 +8,7 @@ import app_store from "./app_store.png";
 import play_store from "./play_store.png";
 
 import facebook from "./facebook.png";
-import instagram from "./instagram.jpeg";
+import instagram from "./instagram.png";
 import tiktok from "./tiktok.png";
 import youtube from "./youtube.png";
 

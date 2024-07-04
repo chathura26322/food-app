@@ -24,7 +24,7 @@ const MiddleSection = () => {
             className="cursor-pointer transition duration-500 border rounded-2xl hover:scale-105"
           />
         </div>
-        <div className="flex justify-between h-[500px] w-[400px] gap-[50px] py-[20px]">
+        <div className="flex justify-between h-[400px] w-[400px] gap-[50px] py-[20px]">
           <img
             className="w-[400px] h-[400px] gap-[50px] py-[20px] relative"
             src={MS_Images.Chicken_Bucket}

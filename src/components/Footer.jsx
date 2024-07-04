@@ -2,15 +2,15 @@ import { assets, socialMedia } from "../assets/assets";
 
 const Footer = () => {
   return (
-    <div className="bg-black py-12 w-full">
-      <div className="flex justify-center items-center">
+    <div className="bg-black py-12 w-full" id="footer">
+      <div className="flex justify-center space-x-4 items-center mx-6">
         <img
           src={assets.logo}
-          alt="KFC Logo"
+          alt="Logo"
           className="h-[120px] w-[120px] mx-4"
         />
-        <hr className="bg-white w-1/2 border-2" />
-        <div className="flex space-x-4 mt-4">
+        <hr className="bg-white  w-1/2 border-2" />
+        <div className="flex space-x-4 mx-6 mt-4">
           <a
             href="https://instagram.com"
             target="_blank"
@@ -19,7 +19,7 @@ const Footer = () => {
             <img
               src={socialMedia.instagram}
               alt="Instagram"
-              className="h-12 w-12"
+              className="h-14 w-14"
             />
           </a>
           <a
@@ -30,7 +30,7 @@ const Footer = () => {
             <img
               src={socialMedia.facebook}
               alt="Facebook"
-              className="h-12 w-12"
+              className="h-[60px] w-[60px]"
             />
           </a>
           <a
@@ -38,7 +38,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={socialMedia.tiktok} alt="TikTok" className="h-12 w-17" />
+            <img src={socialMedia.tiktok} alt="TikTok" className="h-14 w-18" />
           </a>
           <a
             href="https://youtube.com"
@@ -48,7 +48,7 @@ const Footer = () => {
             <img
               src={socialMedia.youtube}
               alt="YouTube"
-              className="h-12 w-12"
+              className="h-[56px] w-[56px]"
             />
           </a>
         </div>
@@ -86,7 +86,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-center text-white mt-8">
-        &copy; 2024 KFC Sri Lanka. All Rights Reserved.
+        &copy; 2024 CDK Sri Lanka. All Rights Reserved.
       </div>
     </div>
   );
