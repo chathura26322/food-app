@@ -2,11 +2,18 @@ import { useState } from "react";
 import { assets } from "../assets/assets";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Link } from "react-router-dom";
+import LoginPopup from "./LoginPopup";
 
 const Navbar = () => {
   const [selectedMenu, setSelectedMenu] = useState("home");
 
   const [cartCount, setCartCount] = useState(0);
+
+  const [showForm, setShowForm] = useState(false);
+
+  const handleSignInClick = () => {
+    setShowForm(!showForm);
+  };
 
   const handleCount = () => {
     setCartCount(cartCount + 1);
@@ -64,10 +71,23 @@ const Navbar = () => {
       </div>
       <div className="flex rounded-[20px] border-[2.5px] w-[200px] border-[#A70604] gap-2 h-[30px] my-2  ">
         <div className="bg-[#A70604] flex items-center justify-center w-[110px]  rounded-l-[20px] ">
-          <p className=" text-white">Sign Up</p>
+          <span
+            className=" text-white cursor-pointer"
+            onClick={handleSignInClick}
+            onSelect={"Sign in"}
+          >
+            Sign In
+          </span>
+          {showForm && <LoginPopup handleSignInClick={handleSignInClick} />}
         </div>
         <div className="bg-white flex items-center justify-center w-[90px] rounded-r-[20px]">
-          <p className=" text-[#dd3835]">Register</p>
+          <span
+            onClick={handleSignInClick}
+            className=" text-[#dd3835] cursor-pointer"
+          >
+            Register
+          </span>
+          {showForm && <LoginPopup handleSignInClick={handleSignInClick} />}
         </div>
       </div>
       <div className="flex rounded-[20px] border-[2.5px] border-[#A70604] w-[120px] justify-between  h-[30px]">
