@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import LoginPopup from "./LoginPopup";
 
 const Navbar = () => {
-  const [selectedMenu, setSelectedMenu] = useState("home");
+  const [selectedMenu, setSelectedMenu] = useState("Rice");
 
   const [cartCount, setCartCount] = useState(0);
 
@@ -38,15 +38,17 @@ const Navbar = () => {
           </p>
         </Link>
         {/* need to add the menu link */}
-        <p
-          className={`transition duration-500 hover:scale-105 cursor-pointer ${
-            selectedMenu === "menu" ? "border-b-4 border-[#A70604]" : ""
-          }`}
-          onClick={() => setSelectedMenu("menu")}
-        >
-          {" "}
-          MENU
-        </p>
+        <Link to="/menu">
+          <p
+            className={`transition duration-500 hover:scale-105 cursor-pointer ${
+              selectedMenu === "menu" ? "border-b-4 border-[#A70604]" : ""
+            }`}
+            onClick={() => setSelectedMenu("menu")}
+          >
+            {" "}
+            MENU
+          </p>
+        </Link>
 
         <a href="#app-download">
           <p

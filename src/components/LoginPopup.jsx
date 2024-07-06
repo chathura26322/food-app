@@ -3,7 +3,7 @@ import CancelIcon from "@mui/icons-material/Cancel";
 
 // eslint-disable-next-line react/prop-types
 const LoginPopup = ({ handleSignInClick }) => {
-  const [currState, setCurrState] = useState("SignIn or Register");
+  const [currState, setCurrState] = useState("Sign In or Register");
 
   const handleSubmit = (event) => {
     event.preventDefault();
