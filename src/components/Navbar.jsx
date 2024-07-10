@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import LoginPopup from "./LoginPopup";
 
 const Navbar = () => {
-  const [selectedMenu, setSelectedMenu] = useState("Rice");
+  const [selectedMenu, setSelectedMenu] = useState("home");
 
   const [cartCount, setCartCount] = useState(0);
 
