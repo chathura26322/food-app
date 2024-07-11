@@ -9,7 +9,7 @@ const ExploreMenu = () => {
 
   return (
     <div>
-      <div className="flex justify-between py-[30px] px-[40px]  h-[150px]">
+      <div className="flex justify-between py-[30px] px-[40px] items-center h-[100px]">
         <div className="flex overflow-x-scroll gap-[100px]  relative ">
           {[
             "Rice",

@@ -12,7 +12,6 @@ import facebook from "./facebook.png";
 import instagram from "./instagram.png";
 import tiktok from "./tiktok.png";
 import youtube from "./youtube.png";
-// import rating_stars from "./rating_stars.png";
 
 import M_Biriyani from "./M_Biriyani.jpeg";
 import M_Burger from "./M_Burger.jpeg";
@@ -58,7 +57,6 @@ export const assets = {
   app_store,
   play_store,
   rating_stars,
-  // rating_stars,
 };
 
 export const MS_Images = {
