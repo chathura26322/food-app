@@ -87,7 +87,9 @@ const Navbar = () => {
       </div>
       <div className="flex rounded-[20px] border-[2.5px] border-[#A70604] w-[120px] justify-between h-[30px]">
         <div className="flex items-center rounded-l-[20px] justify-center bg-[#A70604] w-[60px]">
-          <ShoppingCartIcon className="text-white" />
+          <Link to="/cart">
+            <ShoppingCartIcon className="text-white" />
+          </Link>
         </div>
         <div className="flex items-center justify-center w-[60px] rounded-r-[20px]">
           <p className="text-[#dd3835] font-bold">{count}</p>
